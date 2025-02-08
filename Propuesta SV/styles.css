@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: #ff4d4d;
+}
+
+#initial-image img, #no-image img, #yes-image img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+#yes-btn {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#no-btn {
+    background-color: #ccc;
+    color: black;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff4d4d;
+}
+
+/* Animación de corazones */
+@keyframes fall {
+    0% { top: -10%; }
+    100% { top: 110%; }
+}
+
+.heart {
+    position: absolute;
+    top: -10%;
+    font-size: 20px;
+    color: #ff4d4d;
+    animation: fall 5s linear infinite;
+    z-index: 0;
+}
